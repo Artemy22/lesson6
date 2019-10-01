@@ -5,11 +5,11 @@ import java.util.ArrayList;
 */
 public class Lesson61 {
     public static void main(String[] args) {
-        ArrayList<String> myArrayList = new ArrayList<String>();
-        myArrayList.add("First");
-        myArrayList.add("Second");
-        myArrayList.add("Third");
-        for(String i : myArrayList) {
+        ArrayList<Integer> myArrayList = new ArrayList<Integer>();
+        myArrayList.add(1);
+        myArrayList.add(2);
+        myArrayList.add(3);
+        for(int i : myArrayList) {
             System.out.println(i);
         }
     }
