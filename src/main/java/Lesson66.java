@@ -25,6 +25,24 @@ public class Lesson66 {
         myArrayList.add("Feelki");
         myArrayList.add("JesusChrist");
 
+        System.out.println("FIRST realisation: ");
+
+        ArrayList<String> myMaxList = new ArrayList<String>();
+        int maxLength = 0;
+        for (String i : myArrayList) {
+            if (i.length() > maxLength) {
+                maxLength = i.length();
+                myMaxList.clear();
+                myMaxList.add(i);
+            } else if (i.length() == maxLength) {
+                myMaxList.add(i);
+            }
+        }
+        for (String s : myMaxList) {
+            System.out.println("The most long string is: " + s);
+        }
+
+        System.out.println("SECOND realisation: ");
         ArrayList<Integer> myArrayListInt = new ArrayList<Integer>();
         for (String i : myArrayList) {
             myArrayListInt.add(i.length());
@@ -35,6 +53,7 @@ public class Lesson66 {
             if (i.length() == myArrayListInt.get(myArrayListInt.size() - 1)) {
                 System.out.println("The most long string is: " + i);
             }
+
         }
     }
 }
